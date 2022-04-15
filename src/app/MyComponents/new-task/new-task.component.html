@@ -1,0 +1,14 @@
+<div class="main-box">
+    <div class="container-fluid">
+        <h2>Create New Task</h2>
+        <div class="field is-grouped">
+            <p class="control is-expanded">
+                <input #taskinputTitle class="input has-background-light " type="text" placeholder="Enter Task">
+            </p>
+            <p class="control">
+                <a class="button is-primary" (click)="createTask(taskinputTitle.value)">Create</a>
+            </p>
+        </div>
+        <button class="button go-btn" routerLink="/">Go Back</button>
+    </div>
+</div>

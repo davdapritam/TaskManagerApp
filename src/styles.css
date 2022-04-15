@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(88, 241, 190);
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box{
+    width: 100%;
+    position: absolute;
+    background-color: rgb(88, 241, 190);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid{
+    background-color: white;
+    width: 100%;
+    max-width: 550px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.primary-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 34px;
+    letter-spacing: 1px;
+    color: rgb(16, 172, 141);
+}

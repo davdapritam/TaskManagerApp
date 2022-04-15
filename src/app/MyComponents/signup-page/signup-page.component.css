@@ -1,0 +1,10 @@
+.login-box{
+    background-color: white;
+    padding: 30px 30px;
+    border-radius: 5px;
+}
+
+
+.has-text-green{
+    color: rgb(16, 172, 141);
+}

@@ -1,0 +1,14 @@
+<div class="main-box">
+    <div class="container-fluid">
+        <h2>Edit List</h2>
+        <div class="field is-grouped">
+            <p class="control is-expanded">
+                <input #inputTitle class="input has-background-light " type="text" placeholder="Create List">
+            </p>
+            <p class="control">
+                <a class="button is-primary" (click)="editList(inputTitle.value)" >Save</a>
+            </p>
+        </div>
+        <button class="button go-btn" routerLink="/">Go Back</button>
+    </div>
+</div> 

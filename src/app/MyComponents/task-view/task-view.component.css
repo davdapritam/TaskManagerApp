@@ -1,0 +1,140 @@
+.task-manager-container{
+    display: flex;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 680px;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 250px;
+    padding: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.top-bar{
+    display: flex;
+} 
+
+.top-bar .title{
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.task-list-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    flex-grow: 1;
+    padding: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.list-menu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    flex-grow: 1;
+}
+
+.list-items{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    text-decoration: none;  
+    color: #5f5f5f;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    /* border: 2px solid black;*/
+}
+
+.list-items:hover{
+    cursor: pointer;
+    background-color: #e9e9e9;
+    opacity: 0.9;
+}
+
+.list-items:active{
+    background-color: #cff8ef;    
+    color: rgb(0, 100, 80);
+}
+
+.btnprimary{
+    color: white;
+    background-color: rgb(16, 172, 141);
+    padding: 6px 40px;
+    border: 0px;
+    position: absolute;
+    bottom: 0px;  
+}
+
+.task{
+    display: flex;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    align-items: center;
+}
+
+.task-text{
+    display: flex;
+    flex-grow: 1;
+}
+
+.task-buttons{
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    transform: scale(0.7);
+}
+
+p{
+    margin: 0px 0px;
+}
+
+.complete .task-text{
+    text-decoration: line-through;
+}
+
+.task:not(.complete):hover{
+    box-shadow: 0 0 0 5px #eeeeee;
+    cursor: pointer;
+}
+
+.task:not(.complete):hover .task-buttons{
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1);
+}
+.task:not(.complete):active{
+    transform: scale(0.95);
+}
+
+.circle-add-button{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(16, 172, 141);
+    border: 0px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+}
+
+
+.txt{
+    color: #888;
+    font-size: 36px;
+}
